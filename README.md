@@ -11,18 +11,33 @@ Everything you need to build a Svelte project, powered by [`sv`](https://github.
 Here's an overview of the main directories and files:
 
 ```
-.
-├── .svelte-kit/       # SvelteKit build artifacts (auto-generated)
-├── src/               # Main source code
-│   ├── app.css        # Global styles
-│   ├── app.html       # Root HTML template
-│   ├── lib/           # Shared libraries/assets (e.g., images)
-│   └── routes/        # Application routes (pages, layouts, endpoints)
-├── static/            # Static files (served at site root)
-├── .gitignore         # Git ignore rules
-├── package.json       # Project metadata and dependencies
-├── svelte.config.js   # Svelte project configuration
-└── README.md          # You are here!
+└── 📁src
+    └── 📁lib
+        └── 📁images
+            └── github.svg
+            └── svelte-logo.svg
+            └── svelte-welcome.png
+            └── svelte-welcome.webp
+    └── 📁routes
+        └── +layout.svelte
+        └── +page.js
+        └── +page.svelte
+        └── 📁about
+            └── +page.js
+            └── +page.svelte
+        └── Counter.svelte
+        └── Header.svelte
+        └── 📁sverdle
+            └── +page.server.js
+            └── +page.svelte
+            └── game.js
+            └── 📁how-to-play
+                └── +page.js
+                └── +page.svelte
+            └── words.server.js
+    └── app.css
+    └── app.d.ts
+    └── app.html
 ```
 
 ### Key Folders
